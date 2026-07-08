@@ -1,18 +1,16 @@
 # CLUEDatasetSearch - Datasets Overview
 
-> **Quick lookup table** for all datasets in this AI Data Hub.
+> **Auto-generated overview** of all datasets. Use `Ctrl+F` to search.
 
-This file provides a high-level index of datasets organized by AI workflow categories.
-
-**Note**: This overview is maintained manually for now but will be automated with a generation script + GitHub Action (see `scripts/generate_datasets_md.py` and `.github/workflows/update-datasets-md.yml`).
+This file is **automatically updated** via GitHub Actions when datasets change.
 
 ---
 
-## How to Use
+## 📍a Quick Reference
 
-- Use `Ctrl+F` / `Cmd+F` to search by title, task, or keyword.
-- **HF Dataset ID** column has direct links when available (recommended download method).
-- See the corresponding JSON file in `data/` for full metadata (`recommended_for`, `quality_signals`, etc.).
+- **HF Dataset ID** links are preferred for downloading.
+- See individual JSON files in `data/` for full metadata.
+- Last generated: 2026-07-08 10:38 UTC
 
 ---
 
@@ -20,71 +18,59 @@ This file provides a high-level index of datasets organized by AI workflow categ
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| Chinese Wikipedia 2023 Filtered | [pleisto/wikipedia-cn-20230720-filtered](https://huggingface.co/datasets/pleisto/wikipedia-cn-20230720-filtered) | ~230k articles | llm-pretraining, rag, knowledge | 2026-07-08 | active | High quality filtered version |
-| Large Chinese Web Corpus 2024 | - | Hundreds of GB | llm-pretraining, domain-adaptation | 2026-07-08 | active | Recent large-scale Chinese web data |
-
----
+| Chinese Wikipedia 2023 Filtered | [pleisto/wikipedia-cn-20230720-filtered](https://huggingface.co/datasets/pleisto/wikipedia-cn-20230720-filtered) | 230,000 examples | llm-pretraining, continued-pretraining, rag | 2026-07-08 | active | Strongly recommended for Chinese LLM pretraining |
+| Large Chinese Web Corpus 2024 (Filtered) | - | 数百GB级别 | llm-pretraining, domain-adaptation | 2026-07-08 | active | Recent large-scale Chinese web data (community filtered versions available on HF |
 
 ## 📝 Instruction Tuning / SFT
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| BELLE 3.5M Chinese | [BelleGroup/train_3.5M_CN](https://huggingface.co/datasets/BelleGroup/train_3.5M_CN) | 3.5M examples | sft, llm-finetuning | 2026-07-08 | active | Classic large-scale Chinese SFT |
-| WizardLM Evol-Instruct Chinese | [WizardLM/WizardLM_evol_instruct_V2_196k](https://huggingface.co/datasets/WizardLM/WizardLM_evol_instruct_V2_196k) | ~196k | reasoning-llm, sft | 2026-07-08 | active | Good for complex reasoning improvement |
-| Magpie Chinese Instruction 2025 | - | Large scale | sft, llm-finetuning | 2026-07-08 | active | High-quality synthetic data (2025) |
-
----
+| BELLE 3.5M Chinese Instruction Data | [BelleGroup/train_3.5M_CN](https://huggingface.co/datasets/BelleGroup/train_3.5M_CN) | 3,500,000 examples | sft, llm-finetuning | 2026-07-08 | active | Classic large-scale Chinese SFT dataset |
+| Magpie Chinese Instruction Dataset (2025) | - | 大规模高质量指令数据 | sft, llm-finetuning | 2026-07-08 | active | Recent high-quality synthetic Chinese instruction data |
+| WizardLM Evol-Instruct Chinese | [WizardLM/WizardLM_evol_instruct_V2_196k](https://huggingface.co/datasets/WizardLM/WizardLM_evol_instruct_V2_196k) | 196,000 examples | sft, reasoning-llm | 2026-07-08 | active | Good for improving reasoning ability |
 
 ## ❤️ Preference & Alignment (RLHF / DPO)
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| UltraFeedback Chinese | [HuggingFaceH4/ultrafeedback_binarized](https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized) | ~60k pairs | rlhf, dpo, alignment | 2026-07-08 | active | High-quality preference data |
-| Chinese Preference Dataset 2025 | - | Large scale | rlhf, dpo, alignment | 2026-07-08 | active | New 2025 high-quality Chinese preference data |
-
----
+| Chinese Preference Dataset 2025 (High-Quality) | - | 大规模偏好数据 | rlhf, dpo, alignment | 2026-07-08 | active | 2025最新高质量中文偏好数据，推荐用于对齐训练 |
+| UltraFeedback Chinese Preference Data | [HuggingFaceH4/ultrafeedback_binarized](https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized) | 60,000 examples | rlhf, dpo, alignment | 2026-07-08 | active | High quality preference data for alignment |
 
 ## 📏 Long-Context Data
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| LongBench Chinese 2025 | - | Multi-task long context | long-context-llm, rag-long-context | 2026-07-08 | active | Updated Chinese long-context benchmark & training data |
-| InfiniteBench Chinese | - | Up to 1M tokens | long-context-llm | 2026-07-08 | active | For testing ultra long context capabilities |
-
----
+| InfiniteBench Chinese | - | 超长上下文数据 | long-context-llm | 2026-07-08 | active | 适合测试超长上下文能力 |
+| LongBench Chinese 2025 | - | 多任务长上下文数据 | long-context-llm, rag-long-context | 2026-07-08 | active | 2025更新版中文长上下文 benchmark 和训练数据 |
 
 ## 📊 Evaluation & Benchmarks
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| SuperCLUE 2025 | - | Multiple tasks | evaluation, model-comparison | 2026-07-08 | active | Latest comprehensive Chinese LLM benchmark |
-| C-Eval 2024 | [ceval/ceval-exam](https://huggingface.co/datasets/ceval/ceval-exam) | Multiple subjects | evaluation, chinese-llm | 2026-07-08 | active | Widely used Chinese evaluation benchmark |
+| C-Eval Chinese Evaluation Benchmark | [ceval/ceval-exam](https://huggingface.co/datasets/ceval/ceval-exam) | Multiple subjects | evaluation, chinese-llm | 2026-07-08 | active | Widely used Chinese evaluation benchmark |
+| SuperCLUE 2025 Chinese LLM Evaluation | - | Multiple tasks | evaluation, model-comparison | 2026-07-08 | active | Latest SuperCLUE benchmark |
 
----
-
-## 🧩 Traditional NLP Tasks (tasks/)
+## 🧩 Traditional NLP Tasks
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| MSRA NER | - | ~46k sentences | ner-evaluation, baseline | 2026-07-08 | active | Classic Chinese NER benchmark |
-| CLUENER2020 (Fine-Grain NER) | - | ~12k examples | ner-evaluation, fine-grained-ner | 2026-07-08 | active | CLUE classic fine-grained NER dataset |
-
----
+| CLUE Fine-Grain NER (CLUENER2020) | - | 12,091 examples | ner-evaluation, fine-grained-ner | 2026-07-08 | active | CLUE classic fine-grained NER dataset |
+| MSRA NER Dataset | - | 46,365 examples | ner-evaluation, baseline | 2026-07-08 | active | Classic Chinese NER benchmark |
 
 ## 🏥 Domain-Specific
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| CJRC Legal Reading Comprehension | - | ~50k QA pairs | legal-llm, rag-legal | 2026-07-08 | active | Classic Chinese legal domain dataset |
-| cMedQA Chinese Medical QA | - | ~200k QA pairs | medical-llm, rag-medical | 2026-07-08 | active | Widely used Chinese medical QA dataset |
-| CCKS2017 Medical NER | - | 800 records | medical-ner, domain-ner | 2026-07-08 | active | Early classic Chinese medical NER dataset |
+| CCKS2017 Chinese Electronic Medical Record NER | - | 800 examples | medical-ner, domain-ner | 2026-07-08 | active | Early but classic Chinese medical NER dataset |
+| CJRC Chinese Legal Reading Comprehension | - | 50,000 examples | legal-llm, rag-legal | 2026-07-08 | active | Classic Chinese legal domain dataset |
+| cMedQA Chinese Medical QA | - | 200,000 examples | medical-llm, rag-medical | 2026-07-08 | active | Widely used Chinese medical QA dataset |
 
 ---
 
 ## Notes
 
-- Most datasets recommend **Hugging Face** as the primary download source.
-- Full metadata (including `quality_signals`, exact `num_examples`, `recommended_for` array) is available in the JSON files under `data/`.
-- This table will be **automatically regenerated** using the script in `scripts/generate_datasets_md.py` via GitHub Actions.
+- This table is generated from `data/**/*.json` files.
+- To add a new dataset, add a JSON entry in the appropriate folder and the table will update automatically.
+- For contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**Last updated**: 2026-07-08
+> **Last updated**: 2026-07-08
