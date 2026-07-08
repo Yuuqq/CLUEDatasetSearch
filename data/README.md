@@ -1,30 +1,53 @@
-# 结构化数据集目录 (Structured Data)
+# Structured Data Directory (AI Data Hub)
 
-本目录存放机器可读的 JSON 格式数据集元数据，是未来 Data Hub 的核心维护方式。
+This directory contains machine-readable JSON metadata for datasets, organized by modern AI development workflows.
 
-## 优势
+## New Folder Structure
 
-- 便于程序验证、搜索、同步到 Hugging Face
-- 支持 rich metadata（HF ID、最后验证日期、状态等）
-- 未来可自动生成各分类的 Markdown 表格
+```
+data/
+├── README.md
+├── pretraining/          # Large-scale pretraining corpora
+├── instruction/          # SFT / Instruction tuning data
+├── preference/           # RLHF / Preference / Alignment data
+├── evaluation/           # Benchmarks & Evaluation datasets
+└── domain/               # Vertical domain datasets (legal, medical, finance, code...)
+```
 
-## 文件命名规范
+## Improved JSON Schema (v2)
 
-- `ner.json`
-- `qa.json`
-- `sentiment_analysis.json`
-- `text_classification.json`
-- `text_matching.json`
-- `text_summarization.json`
-- `machine_translation.json`
-- `knowledge_graph.json`
-- `corpus.json`
-- `reading_comprehension.json`
+```json
+{
+  "id": "unique-id-or-slug",
+  "title": "Dataset Full Name",
+  "update_date": "2025-06",
+  "provider": "Organization / Author",
+  "license": "Apache-2.0",
+  "description": "Short description",
+  "keywords": ["chinese", "llm", "pretraining"],
+  "category": "pretraining",
+  "paper_url": "https://arxiv.org/abs/...",
+  "hf_dataset_id": "username/dataset-name",
+  "download_url": "https://...",
+  "size": "120GB / 50M examples",
+  "num_examples": 50000000,
+  "language": "Chinese",
+  "tasks": ["pretraining", "continued-pretraining"],
+  "recommended_for": ["llm-pretraining", "domain-adaptation", "rag"],
+  "quality_signals": {
+    "license_clear": true,
+    "human_annotated": false,
+    "verified_2026": true
+  },
+  "last_verified": "2026-07-08",
+  "status": "active",
+  "remarks": "High quality filtered version"
+}
+```
 
-## 贡献方式
+**New/Recommended fields**:
+- `recommended_for`: array of use cases (e.g. "llm-pretraining", "sft", "rag", "evaluation", "agent")
+- `quality_signals`: object with boolean flags
+- `num_examples`, `size`
 
-1. 在对应 JSON 文件中添加新对象（参考 `ner.json` 示例）
-2. 运行验证脚本（未来提供）
-3. 提交 PR
-
-我们会逐步把原有 Markdown 表格迁移/同步到 JSON。
+We are gradually migrating old data into this new structure.

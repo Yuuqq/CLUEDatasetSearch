@@ -1,0 +1,28 @@
+[
+  {
+    "id": "legal-cjrc",
+    "title": "CJRC Chinese Legal Reading Comprehension",
+    "update_date": "2019",
+    "provider": "CAIL / HFL",
+    "license": "",
+    "description": "Chinese legal domain reading comprehension dataset based on court judgments.",
+    "keywords": ["legal", "reading-comprehension", "chinese"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "https://github.com/china-ai-law-challenge/CAIL2019",
+    "size": "~50k QA pairs",
+    "num_examples": 50000,
+    "language": "Chinese",
+    "tasks": ["reading-comprehension", "legal"],
+    "recommended_for": ["legal-llm", "rag-legal"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Classic Chinese legal domain dataset"
+  }
+]

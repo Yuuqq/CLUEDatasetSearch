@@ -1,0 +1,28 @@
+[
+  {
+    "id": "belle-3.5m-cn",
+    "title": "BELLE 3.5M Chinese Instruction Data",
+    "update_date": "2023",
+    "provider": "BELLEGroup",
+    "license": "CC BY-NC 4.0",
+    "description": "Large-scale Chinese instruction tuning dataset generated from ChatGPT.",
+    "keywords": ["instruction", "sft", "chinese"],
+    "category": "instruction",
+    "paper_url": "",
+    "hf_dataset_id": "BelleGroup/train_3.5M_CN",
+    "download_url": "https://huggingface.co/datasets/BelleGroup/train_3.5M_CN",
+    "size": "3.5M examples",
+    "num_examples": 3500000,
+    "language": "Chinese",
+    "tasks": ["instruction-tuning", "sft"],
+    "recommended_for": ["sft", "llm-finetuning"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Classic large-scale Chinese SFT dataset"
+  }
+]

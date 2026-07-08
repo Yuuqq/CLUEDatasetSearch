@@ -1,0 +1,28 @@
+[
+  {
+    "id": "superclue-2025",
+    "title": "SuperCLUE 2025 Chinese LLM Evaluation",
+    "update_date": "2025",
+    "provider": "CLUEbenchmark",
+    "license": "",
+    "description": "Comprehensive Chinese LLM evaluation benchmark including multiple dimensions.",
+    "keywords": ["evaluation", "benchmark", "chinese-llm"],
+    "category": "evaluation",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "https://www.cluebenchmarks.com/",
+    "size": "Multiple tasks",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["evaluation", "llm-benchmark"],
+    "recommended_for": ["evaluation", "model-comparison"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Latest SuperCLUE benchmark"
+  }
+]

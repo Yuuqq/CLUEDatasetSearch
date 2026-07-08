@@ -1,0 +1,28 @@
+[
+  {
+    "id": "wiki-cn-2023-filtered",
+    "title": "Chinese Wikipedia 2023 Filtered",
+    "update_date": "2023-07",
+    "provider": "pleisto",
+    "license": "CC BY-SA 4.0",
+    "description": "High-quality filtered Chinese Wikipedia articles, excellent for LLM pretraining and knowledge injection.",
+    "keywords": ["wikipedia", "chinese", "pretraining"],
+    "category": "pretraining",
+    "paper_url": "",
+    "hf_dataset_id": "pleisto/wikipedia-cn-20230720-filtered",
+    "download_url": "https://huggingface.co/datasets/pleisto/wikipedia-cn-20230720-filtered",
+    "size": "~23万条高质量词条",
+    "num_examples": 230000,
+    "language": "Chinese",
+    "tasks": ["pretraining", "knowledge"],
+    "recommended_for": ["llm-pretraining", "continued-pretraining", "rag"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "Strongly recommended for Chinese LLM pretraining"
+  }
+]
