@@ -1,0 +1,54 @@
+[
+  {
+    "id": "longbench-chinese-2025",
+    "title": "LongBench Chinese 2025",
+    "update_date": "2025",
+    "provider": "THUNLP / Community",
+    "license": "",
+    "description": "Chinese long-context evaluation and training dataset covering multiple tasks and lengths up to 100k+ tokens.",
+    "keywords": ["long-context", "chinese", "evaluation"],
+    "category": "long_context",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "",
+    "size": "多任务长上下文数据",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["long-context-understanding", "long-document-qa"],
+    "recommended_for": ["long-context-llm", "rag-long-context"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "2025更新版中文长上下文 benchmark 和训练数据"
+  },
+  {
+    "id": "infinitebench-chinese",
+    "title": "InfiniteBench Chinese",
+    "update_date": "2025",
+    "provider": "Community",
+    "license": "",
+    "description": "Very long context (up to 1M tokens) Chinese dataset for testing and training long-context models.",
+    "keywords": ["long-context", "infinite-context", "chinese"],
+    "category": "long_context",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "",
+    "size": "超长上下文数据",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["long-context-understanding"],
+    "recommended_for": ["long-context-llm"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "适合测试超长上下文能力"
+  }
+]

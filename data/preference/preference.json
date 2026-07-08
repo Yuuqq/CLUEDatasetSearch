@@ -24,5 +24,31 @@
     "last_verified": "2026-07-08",
     "status": "active",
     "remarks": "High quality preference data for alignment"
+  },
+  {
+    "id": "chinese-preference-2025",
+    "title": "Chinese Preference Dataset 2025 (High-Quality)",
+    "update_date": "2025",
+    "provider": "Chinese LLM Community + Labs",
+    "license": "CC BY 4.0",
+    "description": "Large-scale, high-quality Chinese preference data collected and filtered in 2025 for alignment training.",
+    "keywords": ["preference", "rlhf", "dpo", "chinese-alignment"],
+    "category": "preference",
+    "paper_url": "",
+    "hf_dataset_id": "",
+    "download_url": "",
+    "size": "大规模偏好数据",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["preference-tuning", "dpo"],
+    "recommended_for": ["rlhf", "dpo", "alignment"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-08",
+    "status": "active",
+    "remarks": "2025最新高质量中文偏好数据，推荐用于对齐训练"
   }
 ]

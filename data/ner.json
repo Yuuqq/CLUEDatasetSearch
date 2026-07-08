@@ -5,7 +5,7 @@
     "update_date": "2026-07",
     "provider": "",
     "license": "",
-    "description": "This file is deprecated. All content has been migrated to the new AI-oriented structure under data/evaluation/ner.json and data/domain/domain.json.",
+    "description": "This file is deprecated. NER content has been migrated to data/tasks/ner.json and data/domain/domain.json.",
     "keywords": [],
     "category": "deprecated",
     "paper_url": "",
@@ -19,6 +19,6 @@
     "quality_signals": {},
     "last_verified": "2026-07-08",
     "status": "deprecated",
-    "remarks": "Please use the new folder structure under data/ instead."
+    "remarks": "Please use data/tasks/ner.json for traditional NER benchmarks."
   }
 ]
