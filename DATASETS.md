@@ -10,7 +10,7 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 - **HF Dataset ID** links are preferred for downloading.
 - See individual JSON files in `data/` for full metadata.
-- Last generated: 2026-07-09 13:42 UTC
+- Last generated: 2026-07-09 13:43 UTC
 
 ---
 
@@ -37,9 +37,10 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| Chinese Preference Dataset 2025 (High-Quality) | - | 大规模偏好数据 | rlhf, dpo, alignment | 2026-07-08 | active | 2025最新高质量中文偏好数据，推荐用于对齐训练 |
-| DPO Chinese Preference 2026 | [OpenChineseLLM/DPO-Chinese-2026](https://huggingface.co/datasets/OpenChineseLLM/DPO-Chinese-2026) | 150,000 examples | dpo, alignment | 2026-07-08 | active | 2026年最新DPO专用中文偏好数据 |
-| UltraFeedback Chinese Preference Data | [HuggingFaceH4/ultrafeedback_binarized](https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized) | 60,000 examples | rlhf, dpo, alignment | 2026-07-08 | active | High quality preference data for alignment |
+| COIG-P: High-Quality Large-Scale Chinese Preference Dataset | [m-a-p/COIG-P](https://huggingface.co/datasets/m-a-p/COIG-P) | 1,006,000 examples | rlhf, dpo, alignment | 2026-07-09 | active | Top recommendation: Large-scale, high-quality Chinese preference data from 2025 |
+| Chinese Preference Dataset 2025 (High-Quality) | - | 大规模偏好数据 | rlhf, dpo, alignment | 2026-07-09 | active | 2025最新高质量中文偏好数据，推荐用于对齐训练 |
+| DPO Chinese Preference 2026 | [OpenChineseLLM/DPO-Chinese-2026](https://huggingface.co/datasets/OpenChineseLLM/DPO-Chinese-2026) | 150,000 examples | dpo, alignment | 2026-07-09 | active | 2026年最新DPO专用中文偏好数据 |
+| UltraFeedback Chinese Preference Data | [HuggingFaceH4/ultrafeedback_binarized](https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized) | 60,000 examples | rlhf, dpo, alignment | 2026-07-09 | active | High quality preference data for alignment |
 
 ## 📏 Long-Context Data
 
@@ -69,9 +70,13 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 | Title | HF Dataset ID | Size | Recommended For | Last Verified | Status | Remarks |
 |-------|---------------|------|------------------|---------------|--------|---------|
-| CJRC Chinese Legal Reading Comprehension | - | 50,000 examples | legal-llm, rag-legal | 2026-07-08 | active | Classic Chinese legal domain dataset |
-| Chinese Financial Domain Dataset 2025 | [FinancialAI/Finance-Chinese-2025](https://huggingface.co/datasets/FinancialAI/Finance-Chinese-2025) | 300,000 examples | finance-llm, rag-finance | 2026-07-08 | active | 2025年高质量中文金融领域数据集 |
-| cMedQA Chinese Medical QA | - | 200,000 examples | medical-llm, rag-medical | 2026-07-08 | active | Widely used Chinese medical QA dataset |
+| CCKS2017 Chinese Electronic Medical Record NER | - | 800 examples | medical-ner, domain-ner | 2026-07-09 | active | Early but classic Chinese medical NER dataset |
+| CJRC Chinese Legal Reading Comprehension | - | 50,000 examples | legal-llm, rag-legal | 2026-07-09 | active | Classic Chinese legal domain dataset |
+| Chinese Financial Domain Dataset 2025 | [FinancialAI/Finance-Chinese-2025](https://huggingface.co/datasets/FinancialAI/Finance-Chinese-2025) | 300,000 examples | finance-llm, rag-finance | 2026-07-09 | active | 2025年高质量中文金融领域数据集 |
+| Finance-Instruct-500k (with Chinese coverage) | [oieieio/Finance-Instruct-500k](https://huggingface.co/datasets/oieieio/Finance-Instruct-500k) | 500,000 examples | finance-llm, rag-finance | 2026-07-09 | active | Good financial instruction data with Chinese support |
+| cMedQA Chinese Medical QA | - | 200,000 examples | medical-llm, rag-medical | 2026-07-09 | active | Widely used Chinese medical QA dataset |
+| shibing624 Chinese Medical Dataset | [shibing624/medical](https://huggingface.co/datasets/shibing624/medical) | Chinese medical SFT/RLHF data | medical-llm, rag-medical | 2026-07-09 | active | Ready-to-use Chinese medical dataset for SFT and RLHF |
+| tw-legal-qa-3M (Taiwan Legal QA) | [lianghsun/tw-legal-qa-3M](https://huggingface.co/datasets/lianghsun/tw-legal-qa-3M) | 5,393 examples | legal-llm, rag-legal | 2026-07-09 | active | Good Traditional Chinese legal QA dataset |
 
 ---
 
