@@ -1,7 +1,7 @@
-# CLUEDatasetSearch · AI Data Hub
+# Chinese AI Data Hub
 
-> **A Chinese Data Hub built for AI / LLM developers**  
-> Discover, access, and contribute high-quality datasets for LLM pretraining, instruction tuning, evaluation, and real-world applications.
+> **A high-quality Chinese Data Hub built for AI / LLM developers**  
+> Discover, access, and contribute high-quality datasets — supporting LLM pretraining, instruction tuning, preference alignment, long-context, and domain-specific applications.
 
 [![Stars](https://img.shields.io/github/stars/Yuuqq/CLUEDatasetSearch?style=social)](https://github.com/Yuuqq/CLUEDatasetSearch)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Yuuqq/CLUEDatasetSearch/pulls)
@@ -70,7 +70,7 @@ We organize datasets according to the modern AI development pipeline:
 ## 📂 Repository Structure (AI-Friendly)
 
 ```
-CLUEDatasetSearch/
+chinese-ai-data-hub/
 ├── README.md
 ├── README_EN.md
 ├── DATASETS.md                 # Quick overview table
@@ -92,10 +92,10 @@ CLUEDatasetSearch/
 ## ✨ Featured Recommendations
 
 - **Pretraining**: `pleisto/wikipedia-cn-20230720-filtered` (High-quality Chinese Wikipedia)
-- **Instruction Data**: Belle / WizardLM / Magpie Chinese versions
-- **Evaluation**: SuperCLUE series, C-Eval
+- **Instruction Data**: Qwen Instruct 2025 / BELLE / WizardLM / Magpie
+- **Evaluation**: SuperCLUE series, C-Eval, AgentBench Chinese 2026
 
-More high-quality datasets are being added rapidly.
+More high-quality 2025–2026 datasets are being added rapidly.
 
 ---
 
@@ -134,13 +134,13 @@ This repository is a **community-maintained and modernized fork** of [CLUEbenchm
 
 ### Key Differences:
 
-| Aspect              | Original (CLUEbenchmark)          | This Repo (Yuuqq maintained)                  |
+| Aspect              | Original (CLUEbenchmark)          | This Repo (Chinese AI Data Hub)                  |
 |---------------------|-----------------------------------|-----------------------------------------------|
 | **Maintenance**     | Largely inactive since 2022       | Actively maintained (2026 updates ongoing)    |
 | **Goal**            | Static dataset list               | **Dynamic AI-oriented Data Hub**              |
 | **Data Format**     | Markdown tables only              | **Structured JSON** + Markdown (dual-track)   |
 | **Dataset Freshness**| Mostly 2017–2020 data             | Prioritizes 2023–2026 high-quality AI data    |
-| **AI Focus**        | General NLP listing               | Categorized for Pretraining / SFT / RLHF / Eval / Domain |
+| **AI Focus**        | General NLP listing               | Categorized for Pretraining / SFT / RLHF / Eval / Long-Context / Domain |
 | **Contribution**    | Traditional issues                | Standardized templates + JSON-first           |
 | **Download**        | Few HF links                      | **HF-first** + ModelScope                     |
 | **Documentation**   | Chinese only                      | **Bilingual** (README + README_EN)            |

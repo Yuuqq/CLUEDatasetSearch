@@ -1,7 +1,7 @@
-# Chinese AI Data Hub
+# Chinese AI Data Hub · 中文 AI 数据枢纽
 
-> **为 AI / LLM 开发者打造的中文数据枢纽**  
-> 发现、获取、贡献高质量数据集 —— 助力大模型预训练、指令微调、评估与应用
+> **为 AI / LLM 开发者打造的高质量中文数据枢纽**  
+> 发现、获取、贡献高质量数据集 —— 支持大模型预训练、指令微调、偏好对齐、长上下文与垂直领域应用
 
 [![Stars](https://img.shields.io/github/stars/Yuuqq/CLUEDatasetSearch?style=social)](https://github.com/Yuuqq/CLUEDatasetSearch)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Yuuqq/CLUEDatasetSearch/pulls)
@@ -70,7 +70,7 @@ cd CLUEDatasetSearch
 ## 📂 仓库结构（AI 友好版）
 
 ```
-CLUEDatasetSearch/
+chinese-ai-data-hub/
 ├── README.md
 ├── README_EN.md
 ├── DATASETS.md                 # 数据集快速总览表
@@ -92,10 +92,10 @@ CLUEDatasetSearch/
 ## ✨ 精选推荐
 
 - **预训练**：`pleisto/wikipedia-cn-20230720-filtered`（高质量中文维基百科）
-- **指令数据**：Belle / WizardLM / Magpie 中文版（持续补充）
-- **评测**：SuperCLUE 系列、C-Eval
+- **指令数据**：Qwen Instruct 2025 / BELLE / WizardLM / Magpie
+- **评测**：SuperCLUE 系列、C-Eval、AgentBench Chinese 2026
 
-更多数据集正在快速补充中。
+更多高质量 2025–2026 年数据集正在快速补充中。
 
 ---
 
@@ -134,13 +134,13 @@ CLUEDatasetSearch/
 
 ### 主要区别：
 
-| 维度           | 原仓库 (CLUEbenchmark)          | 本仓库 (Yuuqq 维护版)                  |
+| 维度           | 原仓库 (CLUEbenchmark)          | 本仓库 (Chinese AI Data Hub)                  |
 |---------------------|-----------------------------------|-----------------------------------------------|
 | **维护状态**   | 2022 年后代码基本停止更新        | 持续活跃维护（2026 年仍在更新）        |
 | **目标定位**   | 静态数据集列表                   | **面向 AI 的动态 Data Hub**                    |
 | **数据格式**   | 仅 Markdown 表格                     | **结构化 JSON** + Markdown（双轨制）         |
 | **数据时效性** | 多为 2017-2020 年数据                 | 优先补充 2023-2026 年高质量 AI 数据         |
-| **AI 友好度**   | 通用 NLP 列表                     | 按预训练/SFT/RLHF/评测/垂直领域分类         |
+| **AI 友好度**   | 通用 NLP 列表                     | 按预训练/SFT/RLHF/评测/长上下文/垂直领域分类         |
 | **贡献流程**   | 传统 Issue                       | 标准化 Issue 模板 + JSON 优先                |
 | **下载推荐**   | 较少 HF 链接                     | **HF 优先** + ModelScope                       |
 | **文档**         | 中文主导                         | **中英双语** (README + README_EN)              |
