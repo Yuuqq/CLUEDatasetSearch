@@ -15,6 +15,11 @@ Need a fast overview of all available datasets?
 
 → **[DATASETS.md](DATASETS.md)** — Comprehensive overview table grouped by AI workflow categories (searchable with Ctrl+F).
 
+**Recent Focus Additions (July 2026)**:
+- **Legal**: CAIL2018 / CAIL2019-SCM / JEC-QA / LeCaRD / DISC-Law-SFT
+- **Finance (Research Reports / Annual Reports)**: FinRpt, CFQA, CFLUE, DocFEE, FinChina SA, FinCUGE, FinGPT
+- **Code**: Gitee + GitCode Chinese code corpora, Ling-Coder-SFT, Evol-Code-ZH (CodeAlpaca-CN)
+
 ---
 
 ## 🎯 Who is this Data Hub for?
@@ -22,7 +27,7 @@ Need a fast overview of all available datasets?
 - **LLM Developers**: Looking for pretraining corpora, SFT/instruction data, and preference data
 - **RAG / Agent Developers**: Domain knowledge, long-context, and tool-use datasets
 - **Researchers**: High-quality evaluation benchmarks and ablation datasets
-- **Industry Teams**: Vertical domain data (legal, medical, finance, code, education)
+- **Industry Teams**: Vertical domain data (**legal, medical, finance, code**, education)
 
 ---
 
@@ -61,9 +66,14 @@ We organize datasets according to the modern AI development pipeline:
 - Chinese comprehensive capability benchmarks (SuperCLUE, CLUE, etc.)
 - Specific capability evaluation (reasoning, long-context, code, math)
 
-### 🏥 Domain-Specific
-- Legal, medical, finance, code, education, government, etc.
+### 🏥 Domain-Specific  ← **Actively Expanding**
+- **Legal**: CAIL series, JEC-QA, LeCaRD, DISC-Law-SFT and more
+- **Finance**: Research report generation (FinRpt), Annual report QA (CFQA), Event extraction (DocFEE), Fine-grained sentiment (FinChina SA), CFLUE, etc.
+- **Code**: Gitee/GitCode Chinese code corpora, Ling-Coder-SFT, CodeAlpaca-CN (Evol-Code-ZH)
+- Medical, education, government, etc.
 - Perfect for vertical LLMs or RAG applications
+
+See `data/domain/domain.json` and the Domain-Specific table in [DATASETS.md](DATASETS.md).
 
 ---
 
@@ -71,9 +81,8 @@ We organize datasets according to the modern AI development pipeline:
 
 ```
 chinese-ai-data-hub/
-├── README.md
-├── README_EN.md
-├── DATASETS.md                 # Quick overview table
+├── README.md / README_EN.md
+├── DATASETS.md                 # Auto-generated overview table
 ├── CONTRIBUTING.md
 ├── data/
 │   ├── pretraining/
@@ -82,17 +91,23 @@ chinese-ai-data-hub/
 │   ├── long_context/
 │   ├── evaluation/
 │   ├── tasks/
-│   └── domain/
+│   └── domain/                 # Legal / Finance / Code / Medical (priority)
 ├── scripts/
 └── .github/
 ```
 
 ---
 
-## ✨ Featured Recommendations
+## ✨ Featured Recommendations (2026 Update)
 
-- **Pretraining**: `pleisto/wikipedia-cn-20230720-filtered` (High-quality Chinese Wikipedia)
-- **Instruction Data**: Qwen Instruct 2025 / BELLE / WizardLM / Magpie
+**Domain Highlights**:
+- **Legal**: CAIL2018 (judgment prediction), JEC-QA (judicial exam), DISC-Law-SFT
+- **Finance**: FinRpt (research report generation), CFQA (annual report QA), CFLUE, DocFEE
+- **Code**: Gitee/GitCode Chinese code corpora, Ling-Coder-SFT, Evol-Code-ZH
+
+**General**:
+- **Pretraining**: `pleisto/wikipedia-cn-20230720-filtered`, BAAI CCI3-HQ
+- **Instruction**: Qwen Instruct 2025 / BELLE / Infinity-Instruct / Magpie
 - **Evaluation**: SuperCLUE series, C-Eval, AgentBench Chinese 2026
 
 More high-quality 2025–2026 datasets are being added rapidly.
@@ -105,13 +120,15 @@ Recommended sources (in order of preference):
 
 1. **Hugging Face Datasets** (Strongly Recommended)
 2. **ModelScope** (Often faster in China)
-3. Original sources
+3. Original sources (GitHub / paper homepages)
 
 ---
 
 ## 🤝 Contribution Guide
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+PRs that add new vertical-domain entries to `data/domain/domain.json` are especially welcome!
 
 ---
 
