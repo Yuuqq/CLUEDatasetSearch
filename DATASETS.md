@@ -10,7 +10,7 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 - **HF Dataset ID** links are preferred for downloading.
 - See individual JSON files in `data/` for full metadata.
-- Last generated: 2026-07-10 08:25 UTC
+- Last generated: 2026-07-10 08:31 UTC
 
 ---
 
@@ -81,8 +81,11 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 | DocFEE Document-level Chinese Financial Event Extraction | - | 19,044 examples | finance-llm, financial-ie, rag-finance | 2026-07-10 | active | 文档级中文金融事件抽取（上市公司公告），适合长财报/公告分析 |
 | Evol-Code-ZH / CodeAlpaca-CN Chinese Code Instruction | [theblackcat102/evol-code-zh](https://huggingface.co/datasets/theblackcat102/evol-code-zh) | 10,280 examples | code-llm, chinese-code-llm, code-sft | 2026-07-10 | active | CodeAlpaca 的中文进化版（Evol-Code-ZH），经典中文代码指令数据集 |
 | FinCUGE Chinese Financial NLP Benchmark / Instruction | [Maciel/FinCUGE-Instruction](https://huggingface.co/datasets/Maciel/FinCUGE-Instruction) | 138,304 examples | finance-llm, rag-finance, financial-nlp-evaluation | 2026-07-10 | active | 中文金融NLP经典基准FinCUGE的指令版本，覆盖摘要/问答/情感/关系/事件抽取等 |
+| FinChina SA Fine-Grained Chinese Financial Sentiment Analysis | - | Fine-grained financial sentiment annotations | finance-llm, financial-sentiment, rag-finance | 2026-07-10 | active | 中文细粒度金融情感分析数据集（企业预警），FinLLM@IJCAI 2023 |
+| FinGPT FinEval Chinese Financial Multiple-Choice | [FinGPT/fingpt-fineval](https://huggingface.co/datasets/FinGPT/fingpt-fineval) | 1,325 examples | finance-llm, financial-evaluation | 2026-07-10 | active | FinGPT 中文金融选择题指令数据，适合中国市场知识评测 |
 | FinRpt Equity Research Report Generation Dataset | [jinsong8/FinRpt](https://huggingface.co/datasets/jinsong8/FinRpt) | 6,825 examples | finance-llm, rag-finance, financial-agent, research-report | 2026-07-10 | active | 高质量中文/双语股票研报生成数据集，覆盖A股CSI800，适合金融Agent与研报分析 |
 | Finance-Instruct-500k (with Chinese coverage) | [oieieio/Finance-Instruct-500k](https://huggingface.co/datasets/oieieio/Finance-Instruct-500k) | 500,000 examples | finance-llm, rag-finance | 2026-07-09 | active | Good financial instruction data with Chinese support |
+| GitCode Chinese Code Corpus | [nyuuzyou/gitcode-code](https://huggingface.co/datasets/nyuuzyou/gitcode-code) | Large Chinese code corpus (85k+ repos) | code-llm, chinese-code-llm, code-pretraining | 2026-07-10 | active | GitCode 中文代码语料，补充Gitee，适合中文Code LLM |
 | Gitee Chinese Code Corpus | [nyuuzyou/gitee-code](https://huggingface.co/datasets/nyuuzyou/gitee-code) | 536GB (3M+ repos, 819M+ files) | code-llm, chinese-code-llm, code-pretraining | 2026-07-10 | active | 高质量中文代码语料（Gitee源），含大量中文注释与文档，适合中文Code LLM预训练 |
 | JEC-QA Chinese Judicial Examination QA | [hails/agieval-jec-qa-ca](https://huggingface.co/datasets/hails/agieval-jec-qa-ca) | 26,365 examples | legal-llm, rag-legal, legal-reasoning | 2026-07-10 | active | 中国国家司法考试真题QA数据集，法律领域经典benchmark |
 | LeCaRD Chinese Legal Case Retrieval Dataset | [sentence-transformers/lecard-v2](https://huggingface.co/datasets/sentence-transformers/lecard-v2) | 43,000 examples | legal-llm, rag-legal, legal-case-retrieval | 2026-07-10 | active | 中文法律案例检索数据集，适合类案检索与RAG |
