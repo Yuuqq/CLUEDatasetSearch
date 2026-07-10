@@ -10,7 +10,7 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 
 - **HF Dataset ID** links are preferred for downloading.
 - See individual JSON files in `data/` for full metadata.
-- Last generated: 2026-07-10 08:22 UTC
+- Last generated: 2026-07-10 08:25 UTC
 
 ---
 
@@ -73,9 +73,13 @@ This file is **automatically updated** via GitHub Actions when datasets change.
 | CAIL2018 Chinese Legal Judgment Prediction | [china-ai-law-challenge/cail2018](https://huggingface.co/datasets/china-ai-law-challenge/cail2018) | 2,680,000 examples | legal-llm, legal-judgment-prediction, rag-legal | 2026-07-10 | active | 经典大规模中文法律判决预测数据集，CAIL 系列奠基之作 |
 | CAIL2019-SCM Similar Case Matching | - | 8,964 examples | legal-llm, rag-legal, legal-case-retrieval | 2026-07-10 | active | CAIL2019 相似案例匹配任务，法律案例检索经典数据集 |
 | CCKS2017 Chinese Electronic Medical Record NER | - | 800 examples | medical-ner, domain-ner | 2026-07-09 | active | Early but classic Chinese medical NER dataset |
+| CFLUE Chinese Financial Language Understanding Evaluation | [DianJin/CFLUE](https://huggingface.co/datasets/DianJin/CFLUE) | 38,634 examples | finance-llm, financial-evaluation, rag-finance | 2026-07-10 | active | 通义点金中文金融理解评测基准，覆盖金融资格考试与应用任务 |
+| CFQA Chinese Financial Annual Report QA | - | Chinese listed company annual report QA pairs | finance-llm, rag-finance, financial-report-analysis | 2026-07-10 | active | 中文上市公司年报/财报问答基准，适合财报RAG与分析 |
 | CJRC Chinese Legal Reading Comprehension | - | 50,000 examples | legal-llm, rag-legal | 2026-07-09 | active | Classic Chinese legal domain dataset |
 | Chinese Financial Domain Dataset 2025 | [FinancialAI/Finance-Chinese-2025](https://huggingface.co/datasets/FinancialAI/Finance-Chinese-2025) | 300,000 examples | finance-llm, rag-finance | 2026-07-09 | active | 2025年高质量中文金融领域数据集 |
 | DISC-Law-SFT Chinese Legal Instruction Dataset | [ShengbinYue/DISC-Law-SFT](https://huggingface.co/datasets/ShengbinYue/DISC-Law-SFT) | Large-scale legal SFT (Pair + Triplet QA released) | legal-llm, legal-sft, rag-legal | 2026-07-10 | active | 复旦DISC高质量中文法律指令微调数据集，适合Legal LLM SFT |
+| DocFEE Document-level Chinese Financial Event Extraction | - | 19,044 examples | finance-llm, financial-ie, rag-finance | 2026-07-10 | active | 文档级中文金融事件抽取（上市公司公告），适合长财报/公告分析 |
+| Evol-Code-ZH / CodeAlpaca-CN Chinese Code Instruction | [theblackcat102/evol-code-zh](https://huggingface.co/datasets/theblackcat102/evol-code-zh) | 10,280 examples | code-llm, chinese-code-llm, code-sft | 2026-07-10 | active | CodeAlpaca 的中文进化版（Evol-Code-ZH），经典中文代码指令数据集 |
 | FinCUGE Chinese Financial NLP Benchmark / Instruction | [Maciel/FinCUGE-Instruction](https://huggingface.co/datasets/Maciel/FinCUGE-Instruction) | 138,304 examples | finance-llm, rag-finance, financial-nlp-evaluation | 2026-07-10 | active | 中文金融NLP经典基准FinCUGE的指令版本，覆盖摘要/问答/情感/关系/事件抽取等 |
 | FinRpt Equity Research Report Generation Dataset | [jinsong8/FinRpt](https://huggingface.co/datasets/jinsong8/FinRpt) | 6,825 examples | finance-llm, rag-finance, financial-agent, research-report | 2026-07-10 | active | 高质量中文/双语股票研报生成数据集，覆盖A股CSI800，适合金融Agent与研报分析 |
 | Finance-Instruct-500k (with Chinese coverage) | [oieieio/Finance-Instruct-500k](https://huggingface.co/datasets/oieieio/Finance-Instruct-500k) | 500,000 examples | finance-llm, rag-finance | 2026-07-09 | active | Good financial instruction data with Chinese support |
