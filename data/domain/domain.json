@@ -338,6 +338,84 @@
     "remarks": "高质量中文/双语股票研报生成数据集，覆盖A股CSI800，适合金融Agent与研报分析"
   },
   {
+    "id": "finance-cfqa",
+    "title": "CFQA Chinese Financial Annual Report QA",
+    "update_date": "2025",
+    "provider": "Yujian Gan et al.",
+    "license": "",
+    "description": "Chinese Financial Question-Answering benchmark focused on annual reports (年报/财报) of Chinese listed companies. Includes grounded QA pairs with source page references from PDF financial reports. Designed for RAG and financial document understanding.",
+    "keywords": ["finance", "annual-report", "财报", "qa", "chinese", "cfqa"],
+    "category": "domain",
+    "paper_url": "https://doi.org/10.1140/epjds/s13688-025-00601-6",
+    "hf_dataset_id": "",
+    "download_url": "https://github.com/ygan/CFQA",
+    "size": "Chinese listed company annual report QA pairs",
+    "num_examples": null,
+    "language": "Chinese",
+    "tasks": ["financial-qa", "document-qa", "rag-finance", "annual-report"],
+    "recommended_for": ["finance-llm", "rag-finance", "financial-report-analysis"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-10",
+    "status": "active",
+    "remarks": "中文上市公司年报/财报问答基准，适合财报RAG与分析"
+  },
+  {
+    "id": "finance-cflue",
+    "title": "CFLUE Chinese Financial Language Understanding Evaluation",
+    "update_date": "2024-2025",
+    "provider": "Alibaba / DianJin (通义点金)",
+    "license": "",
+    "description": "Chinese Financial Language Understanding Evaluation benchmark. Knowledge assessment: ~38k multi-choice questions from 15 financial qualification exams (会计、审计、经济、金融、证券等). Application assessment: 16k+ instances across classification, translation, RE, RC, generation. Comprehensive for financial LLM evaluation.",
+    "keywords": ["finance", "benchmark", "evaluation", "chinese", "cflue", "exam"],
+    "category": "domain",
+    "paper_url": "https://arxiv.org/abs/2405.10542",
+    "hf_dataset_id": "DianJin/CFLUE",
+    "download_url": "https://github.com/aliyun/cflue",
+    "size": "~38k knowledge + 16k application instances",
+    "num_examples": 38634,
+    "language": "Chinese",
+    "tasks": ["financial-qa", "multiple-choice", "classification", "relation-extraction", "generation"],
+    "recommended_for": ["finance-llm", "financial-evaluation", "rag-finance"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-10",
+    "status": "active",
+    "remarks": "通义点金中文金融理解评测基准，覆盖金融资格考试与应用任务"
+  },
+  {
+    "id": "finance-docfee",
+    "title": "DocFEE Document-level Chinese Financial Event Extraction",
+    "update_date": "2025",
+    "provider": "tongzhou21 et al.",
+    "license": "",
+    "description": "Large-scale document-level Chinese Financial Event Extraction dataset from listed company announcements (公告). Contains 19,044 annotated long documents reflecting real financial report lengths. Focuses on complex event extraction in Chinese stock market announcements.",
+    "keywords": ["finance", "event-extraction", "announcement", "财报", "chinese", "docfee"],
+    "category": "domain",
+    "paper_url": "https://www.nature.com/articles/s41597-025-05083-9",
+    "hf_dataset_id": "",
+    "download_url": "https://github.com/tongzhou21/DocFEE",
+    "size": "19,044 annotated documents",
+    "num_examples": 19044,
+    "language": "Chinese",
+    "tasks": ["event-extraction", "document-level-ie", "financial-event"],
+    "recommended_for": ["finance-llm", "financial-ie", "rag-finance"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": true,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-10",
+    "status": "active",
+    "remarks": "文档级中文金融事件抽取（上市公司公告），适合长财报/公告分析"
+  },
+  {
     "id": "tw-legal-qa-3m",
     "title": "tw-legal-qa-3M (Taiwan Legal QA)",
     "update_date": "2025",
@@ -414,5 +492,31 @@
     "last_verified": "2026-07-10",
     "status": "active",
     "remarks": "inclusionAI 开源的大规模中英双语代码SFT数据，覆盖多语言与复杂代码任务"
+  },
+  {
+    "id": "code-alpaca-zh",
+    "title": "Evol-Code-ZH / CodeAlpaca-CN Chinese Code Instruction",
+    "update_date": "2024",
+    "provider": "theblackcat102",
+    "license": "",
+    "description": "Chinese evolved version of CodeAlpaca. Instruction-following code generation dataset with Chinese instructions (10,280 examples). Covers multiple programming languages (Python, JS, SQL, Java, C++ etc.). Evolved from CodeAlpaca_20K using Evol-Instruct strategies including language conversion to Chinese. Ideal for Chinese Code LLM SFT.",
+    "keywords": ["code", "codealpaca", "chinese", "sft", "instruction", "evol"],
+    "category": "domain",
+    "paper_url": "",
+    "hf_dataset_id": "theblackcat102/evol-code-zh",
+    "download_url": "https://huggingface.co/datasets/theblackcat102/evol-code-zh",
+    "size": "10,280 examples",
+    "num_examples": 10280,
+    "language": "Chinese + Code",
+    "tasks": ["code-sft", "text-to-code", "code-generation", "instruction-tuning"],
+    "recommended_for": ["code-llm", "chinese-code-llm", "code-sft"],
+    "quality_signals": {
+      "license_clear": true,
+      "human_annotated": false,
+      "verified_2026": true
+    },
+    "last_verified": "2026-07-10",
+    "status": "active",
+    "remarks": "CodeAlpaca 的中文进化版（Evol-Code-ZH），经典中文代码指令数据集"
   }
 ]
